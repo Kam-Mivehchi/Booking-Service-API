@@ -12,7 +12,7 @@ const BookingForm = () => {
             <ServiceAndRadiusCheck />
             <DateAndTime />
             <TaskDescription />
-            <LocationForm />
+            {/* <LocationForm /> */}
             <Summary />
             <Payment />
         </Container>

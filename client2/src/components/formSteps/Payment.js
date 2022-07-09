@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import styled from 'styled-components'
-
+import Pay from './pay'
 const StyledHeader = styled(Card.Title)`
     font-weight:bold;
     margin: 1rem auto 2rem auto ;
@@ -58,12 +58,12 @@ const Payment = () => {
 
 
 
-              
+
                 <ButtonGroup style={{ width: '80%', position: 'relative', left: "50%", transform: 'translateX(-50%)', marginTop: '1rem' }}>
                     <StyledButton variant="outline-success" type="submit">Back</StyledButton>
                     <StyledButton variant="success">Next</StyledButton>
                 </ButtonGroup>
-
+                <Pay />
             </Form>
         </Card>
     )

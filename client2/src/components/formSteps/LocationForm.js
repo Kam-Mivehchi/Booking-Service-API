@@ -30,11 +30,19 @@ const content = {
 }
 const locationForm = () => {
     return (
-        <Card style={{ padding: '1rem' }}>
-            <StyledHeader>
+        <>
+            {/* <StyledHeader>
                 {content.title}
-            </StyledHeader>
+            </StyledHeader> */}
             <Form>
+                <Row className="mb-3">
+                    <Form.Group as={Col} xs={12} controlId="formGridName">
+                        <Form.Label>Name</Form.Label>
+                        <Form.Control type="text" placeholder="Enter Name" />
+                    </Form.Group>
+
+
+                </Row>
                 <Row className="mb-3">
                     <Form.Group as={Col} xs={12} controlId="formGridPhone">
                         <Form.Label>Phone</Form.Label>
@@ -83,7 +91,7 @@ const locationForm = () => {
                 </ButtonGroup>
 
             </Form>
-        </Card>
+        </>
     )
 }
 

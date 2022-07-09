@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card'
 import styled from 'styled-components'
 import InputGroup from 'react-bootstrap/InputGroup';
+import Location from './LocationForm'
 const StyledHeader = styled(Card.Title)`
     font-weight:bold;
     margin: 1rem auto 2rem auto ;
@@ -46,7 +47,7 @@ const DateAndTime = () => {
                 <Form.Label htmlFor="Time">Time:</Form.Label>
                 <Form.Control type='time' id="Time" min="09:00" max="18:00" required />
 
-                <Card.Title as="h6" style={{ marginTop: '1rem', textAlign: 'start', fontWeight: 'bold' }}>
+                {/* <Card.Title as="h6" style={{ marginTop: '1rem', textAlign: 'start', fontWeight: 'bold' }}>
                     {content.recurring.title}
                 </Card.Title>
                 <Card.Text className="text-start">
@@ -61,15 +62,18 @@ const DateAndTime = () => {
                             <Form.Check type='radio' id="Once" value={value[1]} label={value[0]} />
                         </>
                     )
-                })}
-                <ButtonGroup style={{ width: '80%', position: 'relative', left: "50%", transform: 'translateX(-50%)', marginTop: '1rem' }}>
+                })} */}
+                {/* <ButtonGroup style={{ width: '80%', position: 'relative', left: "50%", transform: 'translateX(-50%)', marginTop: '1rem' }}>
                     <StyledButton variant="outline-success" type="submit">Back</StyledButton>
                     <StyledButton variant="success">Next</StyledButton>
-                </ButtonGroup>
+                </ButtonGroup> */}
 
             </Form>
+            <Location />
         </Card>
+
     )
+
 }
 
 export default DateAndTime
