@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS pbjdumpage;
+
+CREATE DATABASE pbjdumpage;
