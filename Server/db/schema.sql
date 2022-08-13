@@ -1,3 +1,2 @@
-DROP DATABASE IF EXISTS pbjdumpage;
-
-CREATE DATABASE pbjdumpage;
+DROP DATABASE IF EXISTS pbj_dumpage;
+CREATE DATABASE pbj_dumpage;

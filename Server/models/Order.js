@@ -1,7 +1,8 @@
 const { Model, DataTypes } = require('sequelize')
-
 const sequelize = require('../config/config')
 
+
+//extending built in sequelize model
 class Order extends Model { }
 
 
@@ -33,9 +34,9 @@ Order.init(
         },
         address2: {
             type: DataTypes.STRING,
-            allowNull: false,
+
         },
-        City: {
+        city: {
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -55,17 +56,10 @@ Order.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        serviceType: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         weight: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            validate: {
-                len: [5]
-                // TODO: find max and min weight that can be delivered for validation
-            }
+
         },
         date: {
             type: DataTypes.INTEGER,
@@ -78,10 +72,7 @@ Order.init(
         time: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            validate: {
-                len: [5]
-                // TODO: find max and min weight that can be delivered for validation
-            }
+
         },
         cost: {
             type: DataTypes.INTEGER,
@@ -95,8 +86,8 @@ Order.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'Order'
+        modelName: 'order'
     }
-)
+);
 
 module.exports = Order;
