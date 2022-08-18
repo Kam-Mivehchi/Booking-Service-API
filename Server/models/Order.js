@@ -8,7 +8,7 @@ class Order extends Model { }
 
 Order.init(
     {
-        id: {
+        orderId: {
 
             // TODO: make the ID unique id maybe session or device based
             type: DataTypes.INTEGER,
@@ -17,73 +17,34 @@ Order.init(
             primaryKey: true,
             autoIncrement: true
         },
-        name: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        phone: {
+        customer_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            validate: {
-                len: [10]
+            references: {
+                model: 'customer',
+                key: 'id'
             }
         },
-        address: {
-            type: DataTypes.STRING,
+        pickup: {
+            type: DataTypes.DATE,
             allowNull: false,
         },
-        address2: {
-            type: DataTypes.STRING,
-
-        },
-        city: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        state: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        zip: {
+        // pickupTime: {
+        //     type: DataTypes.TIME,
+        //     allowNull: false,
+        // },
+        price: {
             type: DataTypes.INTEGER,
-            allowNull: false,
-            validate: {
-                len: [5]
-                // TODO: validate that it is in range
-            }
         },
-        serviceType: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        weight: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-
-        },
-        date: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            validate: {
-                // TODO: if valid date
-                // TODO: if date is available
-            }
-        },
-        time: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-
-        },
-        cost: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-
+        payment: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
         }
 
     },
     {
         sequelize,
-        timestamps: false,
+        timestamps: true,
         freezeTableName: true,
         underscored: true,
         modelName: 'order'

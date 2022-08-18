@@ -4,7 +4,7 @@ const express = require("express");
 const sequelize = require('./config/config');
 const routes = require('./routes');
 
-const { Order, Availability } = require('./models');
+
 var corsOptions = {
     origin: 'https://localhost:3001'
 }
@@ -83,7 +83,7 @@ app.use(routes);
 
 
 sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => console.log('Now listening'));
+    app.listen(PORT, () => console.log(`Now listening on at https://localhost:${PORT}`));
 })
 
 // This is a public sample test API key.
