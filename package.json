@@ -1,20 +1,23 @@
 {
-  "name": "pbandj",
+  "name": "y",
   "version": "1.0.0",
-  "description": "",
+  "description": "y",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"cd server && nodemon index.js\" \"cd client2/ && npm run start\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kam-Mivehchi/PBJDumpage.git"
+    "start": "nodemon index.js",
+    "seed": "node seeds/index.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Kam-Mivehchi/PBJDumpage/issues"
-  },
-  "homepage": "https://github.com/Kam-Mivehchi/PBJDumpage#readme"
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.2",
+    "stripe": "^10.2.0",
+    "zipcode-city-distance": "^1.0.6"
+  }
 }
