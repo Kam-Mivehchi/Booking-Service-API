@@ -2,193 +2,112 @@ const { Customer } = require('../models');
 
 const customerData = [
     {
-        "email": "alliebray@prowaste.com",
-        "Lname": "Foley",
-        "Fname": "Willa",
-        "address": "2032 Harbor Court",
-        "city": "Tooleville",
-        "state": "Colorado",
-        "zip": 66460
+        "Fname": "Andrews",
+        "Lname": "Banks",
+        "email": "andrewsbanks@geoforma.com",
+        "phone": "+1 (897) 430-3987"
     },
     {
-        "email": "willafoley@prowaste.com",
-        "Lname": "Perez",
-        "Fname": "Marla",
-        "address": "4910 Coles Street",
-        "city": "Sparkill",
-        "state": "Tennessee",
-        "zip": 59659
+        "Fname": "Brennan",
+        "Lname": "Richmond",
+        "email": "brennanrichmond@geoforma.com",
+        "phone": "+1 (899) 483-2134"
     },
     {
-        "email": "marlaperez@prowaste.com",
-        "Lname": "Adkins",
-        "Fname": "Irene",
-        "address": "8579 Bath Avenue",
-        "city": "Martinsville",
-        "state": "Maine",
-        "zip": 18746
+        "Fname": "Workman",
+        "Lname": "Camacho",
+        "email": "workmancamacho@geoforma.com",
+        "phone": "+1 (847) 557-3189"
     },
     {
-        "email": "ireneadkins@prowaste.com",
-        "Lname": "Velazquez",
-        "Fname": "Stevenson",
-        "address": "4772 Revere Place",
-        "city": "Hoagland",
-        "state": "Michigan",
-        "zip": 75477
+        "Fname": "Lyons",
+        "Lname": "Compton",
+        "email": "lyonscompton@geoforma.com",
+        "phone": "+1 (865) 413-3860"
     },
     {
-        "email": "stevensonvelazquez@prowaste.com",
-        "Lname": "Miles",
-        "Fname": "Kristy",
-        "address": "3782 Wolf Place",
-        "city": "Cleary",
-        "state": "Guam",
-        "zip": 56255
+        "Fname": "Eddie",
+        "Lname": "Kerr",
+        "email": "eddiekerr@geoforma.com",
+        "phone": "+1 (866) 468-2113"
     },
     {
-        "email": "kristymiles@prowaste.com",
-        "Lname": "Atkinson",
-        "Fname": "Wheeler",
-        "address": "2401 Rewe Street",
-        "city": "Alden",
-        "state": "Georgia",
-        "zip": 43509
+        "Fname": "Chavez",
+        "Lname": "Dixon",
+        "email": "chavezdixon@geoforma.com",
+        "phone": "+1 (957) 493-3622"
     },
     {
-        "email": "wheeleratkinson@prowaste.com",
-        "Lname": "Schmidt",
-        "Fname": "Aguirre",
-        "address": "1812 Juliana Place",
-        "city": "Riegelwood",
-        "state": "Mississippi",
-        "zip": 59798
+        "Fname": "Alta",
+        "Lname": "Robertson",
+        "email": "altarobertson@geoforma.com",
+        "phone": "+1 (881) 507-3190"
     },
     {
-        "email": "aguirreschmidt@prowaste.com",
-        "Lname": "Becker",
-        "Fname": "Hayden",
-        "address": "511 Ovington Court",
-        "city": "Weogufka",
-        "state": "Maryland",
-        "zip": 82336
+        "Fname": "Phillips",
+        "Lname": "George",
+        "email": "phillipsgeorge@geoforma.com",
+        "phone": "+1 (908) 586-3028"
     },
     {
-        "email": "haydenbecker@prowaste.com",
-        "Lname": "French",
-        "Fname": "Ora",
-        "address": "8461 Essex Street",
-        "city": "Englevale",
-        "state": "South Dakota",
-        "zip": 77620
+        "Fname": "Hillary",
+        "Lname": "Floyd",
+        "email": "hillaryfloyd@geoforma.com",
+        "phone": "+1 (817) 530-3888"
     },
     {
-        "email": "orafrench@prowaste.com",
-        "Lname": "Davenport",
-        "Fname": "Harriet",
-        "address": "8428 Tapscott Avenue",
-        "city": "Venice",
-        "state": "Federated States Of Micronesia",
-        "zip": 21691
+        "Fname": "Sharpe",
+        "Lname": "Gregory",
+        "email": "sharpegregory@geoforma.com",
+        "phone": "+1 (883) 493-2349"
     },
     {
-        "email": "harrietdavenport@prowaste.com",
-        "Lname": "Hoover",
-        "Fname": "Madeleine",
-        "address": "7183 Auburn Place",
-        "city": "Westphalia",
-        "state": "Nevada",
-        "zip": 55470
+        "Fname": "Anastasia",
+        "Lname": "Cameron",
+        "email": "anastasiacameron@geoforma.com",
+        "phone": "+1 (931) 587-3763"
     },
     {
-        "email": "madeleinehoover@prowaste.com",
-        "Lname": "Blankenship",
-        "Fname": "Haley",
-        "address": "5593 Albemarle Road",
-        "city": "Weedville",
-        "state": "Kansas",
-        "zip": 94060
+        "Fname": "Hodge",
+        "Lname": "Hardin",
+        "email": "hodgehardin@geoforma.com",
+        "phone": "+1 (842) 509-3388"
     },
     {
-        "email": "haleyblankenship@prowaste.com",
-        "Lname": "Rich",
-        "Fname": "Imelda",
-        "address": "1858 Clarendon Road",
-        "city": "Denio",
-        "state": "Indiana",
-        "zip": 90460
+        "Fname": "Alyson",
+        "Lname": "Mccall",
+        "email": "alysonmccall@geoforma.com",
+        "phone": "+1 (894) 517-2734"
     },
     {
-        "email": "imeldarich@prowaste.com",
-        "Lname": "Marquez",
-        "Fname": "Bonner",
-        "address": "9882 Kings Hwy",
-        "city": "Mappsville",
-        "state": "Wisconsin",
-        "zip": 18022
+        "Fname": "Cathryn",
+        "Lname": "Malone",
+        "email": "cathrynmalone@geoforma.com",
+        "phone": "+1 (849) 542-2706"
     },
     {
-        "email": "bonnermarquez@prowaste.com",
-        "Lname": "Harris",
-        "Fname": "Cecelia",
-        "address": "2320 Erasmus Street",
-        "city": "Axis",
-        "state": "Alaska",
-        "zip": 41503
+        "Fname": "Mcleod",
+        "Lname": "Murray",
+        "email": "mcleodmurray@geoforma.com",
+        "phone": "+1 (974) 548-2100"
     },
     {
-        "email": "ceceliaharris@prowaste.com",
-        "Lname": "Crane",
-        "Fname": "Chandra",
-        "address": "8879 Batchelder Street",
-        "city": "Elwood",
-        "state": "New Mexico",
-        "zip": 43145
+        "Fname": "Paige",
+        "Lname": "Mosley",
+        "email": "paigemosley@geoforma.com",
+        "phone": "+1 (976) 535-3777"
     },
     {
-        "email": "chandracrane@prowaste.com",
-        "Lname": "Kaufman",
-        "Fname": "Daniels",
-        "address": "1979 Mill Street",
-        "city": "Dixie",
-        "state": "Iowa",
-        "zip": 34869
+        "Fname": "Stacey",
+        "Lname": "Lloyd",
+        "email": "staceylloyd@geoforma.com",
+        "phone": "+1 (847) 517-3491"
     },
     {
-        "email": "danielskaufman@prowaste.com",
-        "Lname": "Palmer",
-        "Fname": "Lois",
-        "address": "3364 Junius Street",
-        "city": "Wacissa",
-        "state": "New York",
-        "zip": 65867
-    },
-    {
-        "email": "loispalmer@prowaste.com",
-        "Lname": "Mitchell",
-        "Fname": "Hutchinson",
-        "address": "8510 Sunnyside Court",
-        "city": "Tampico",
-        "state": "Marshall Islands",
-        "zip": 73998
-    },
-    {
-        "email": "hutchinsonmitchell@prowaste.com",
-        "Lname": "Clay",
-        "Fname": "Gwen",
-        "address": "847 Narrows Avenue",
-        "city": "Woodburn",
-        "state": "New Jersey",
-        "zip": 99151
-    },
-    {
-        "email": "gwenclay@prowaste.com",
-        "Lname": "Todd",
-        "Fname": "Wilder",
-        "address": "965 Sullivan Place",
-        "city": "Brenton",
-        "state": "West Virginia",
-        "zip": 95182
+        "Fname": "Mccoy",
+        "Lname": "Moses",
+        "email": "mccoymoses@geoforma.com",
+        "phone": "+1 (833) 582-3957"
     }
 ];
 

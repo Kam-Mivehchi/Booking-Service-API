@@ -2,141 +2,191 @@ const { Order } = require('../models');
 
 const orderData = [
     {
-        "pickup": "2019-12-15T10:33:14Z",
-        "customer_id": 9,
-        "price": 353,
-        "payment": true
+        "date": "2015-01-08",
+        "time": "04:48",
+        "address": "604 Church Avenue",
+        "city": "Greenwich",
+        "state": "Missouri",
+        "zip": 13361,
+        "price": 315,
+        "payment_status": "pending",
+        "order_status": "payment recieved"
     },
     {
-        "pickup": "2017-04-14T07:57:48Z",
-        "customer_id": 13,
-        "price": 383,
-        "payment": false
+        "date": "2018-01-11",
+        "time": "09:43",
+        "address": "610 Tiffany Place",
+        "city": "Kent",
+        "state": "Puerto Rico",
+        "zip": 81467,
+        "price": 321,
+        "payment_status": "complete",
+        "order_status": "accepted"
     },
     {
-        "pickup": "2019-05-11T11:57:09Z",
-        "customer_id": 11,
-        "price": 322,
-        "payment": true
+        "date": "2017-04-13",
+        "time": "11:04",
+        "address": "208 Canarsie Road",
+        "city": "Spelter",
+        "state": "Ohio",
+        "zip": 77802,
+        "price": 374,
+        "payment_status": "error",
+        "order_status": "accepted"
     },
     {
-        "pickup": "2015-11-12T08:59:57Z",
-        "customer_id": 1,
-        "price": 346,
-        "payment": true
+        "date": "2019-08-26",
+        "time": "05:37",
+        "address": "109 Brooklyn Road",
+        "city": "Welch",
+        "state": "Northern Mariana Islands",
+        "zip": 70643,
+        "price": 315,
+        "payment_status": "pending",
+        "order_status": "accepted"
     },
     {
-        "pickup": "2015-03-30T11:02:41Z",
-        "customer_id": 5,
-        "price": 343,
-        "payment": false
+        "date": "2018-07-05",
+        "time": "09:55",
+        "address": "304 Knickerbocker Avenue",
+        "city": "Nile",
+        "state": "Federated States Of Micronesia",
+        "zip": 65602,
+        "price": 291,
+        "payment_status": "error",
+        "order_status": "payment recieved"
     },
     {
-        "pickup": "2018-05-13T03:55:29Z",
-        "customer_id": 13,
-        "price": 349,
-        "payment": false
+        "date": "2017-11-02",
+        "time": "11:16",
+        "address": "524 Franklin Avenue",
+        "city": "Gibsonia",
+        "state": "Mississippi",
+        "zip": 12727,
+        "price": 380,
+        "payment_status": "pending",
+        "order_status": "complete"
     },
     {
-        "pickup": "2020-03-30T04:33:09Z",
-        "customer_id": 7,
-        "price": 284,
-        "payment": false
+        "date": "2014-12-21",
+        "time": "06:41",
+        "address": "493 Rose Street",
+        "city": "Lutsen",
+        "state": "Utah",
+        "zip": 18953,
+        "price": 254,
+        "payment_status": "error",
+        "order_status": "complete"
     },
     {
-        "pickup": "2014-11-07T11:14:54Z",
-        "customer_id": 16,
-        "price": 362,
-        "payment": true
+        "date": "2015-06-09",
+        "time": "04:56",
+        "address": "181 Bushwick Place",
+        "city": "Oasis",
+        "state": "South Carolina",
+        "zip": 50622,
+        "price": 345,
+        "payment_status": "error",
+        "order_status": "order pending"
     },
     {
-        "pickup": "2014-07-07T06:53:44Z",
-        "customer_id": 18,
-        "price": 341,
-        "payment": false
+        "date": "2015-11-08",
+        "time": "06:58",
+        "address": "821 Verona Place",
+        "city": "Foxworth",
+        "state": "Texas",
+        "zip": 49478,
+        "price": 307,
+        "payment_status": "error",
+        "order_status": "order pending"
     },
     {
-        "pickup": "2014-03-22T07:37:44Z",
-        "customer_id": 17,
+        "date": "2016-10-11",
+        "time": "08:07",
+        "address": "553 Conway Street",
+        "city": "Graniteville",
+        "state": "New Hampshire",
+        "zip": 78217,
         "price": 387,
-        "payment": false
+        "payment_status": "pending",
+        "order_status": "complete"
     },
     {
-        "pickup": "2020-03-20T03:49:02Z",
-        "customer_id": 3,
-        "price": 289,
-        "payment": true
+        "date": "2021-09-10",
+        "time": "04:23",
+        "address": "499 Krier Place",
+        "city": "Eureka",
+        "state": "Nevada",
+        "zip": 47689,
+        "price": 354,
+        "payment_status": "complete",
+        "order_status": "accepted"
     },
     {
-        "pickup": "2018-03-15T06:42:31Z",
-        "customer_id": 2,
-        "price": 278,
-        "payment": false
+        "date": "2015-04-14",
+        "time": "07:42",
+        "address": "848 Elm Place",
+        "city": "Homeworth",
+        "state": "Kansas",
+        "zip": 27358,
+        "price": 384,
+        "payment_status": "error",
+        "order_status": "payment recieved"
     },
     {
-        "pickup": "2017-03-31T10:20:40Z",
-        "customer_id": 13,
-        "price": 330,
-        "payment": true
+        "date": "2020-12-08",
+        "time": "05:57",
+        "address": "110 Norfolk Street",
+        "city": "Lodoga",
+        "state": "District Of Columbia",
+        "zip": 51290,
+        "price": 337,
+        "payment_status": "pending",
+        "order_status": "payment recieved"
     },
     {
-        "pickup": "2022-06-19T06:29:34Z",
-        "customer_id": 10,
-        "price": 381,
-        "payment": true
-    }, {
-        "pickup": "2019-05-13T11:58:04Z",
-        "customer_id": 13,
-        "price": 253,
-        "payment": true
+        "date": "2015-07-03",
+        "time": "04:30",
+        "address": "336 Flatbush Avenue",
+        "city": "Charco",
+        "state": "Palau",
+        "zip": 32333,
+        "price": 368,
+        "payment_status": "complete",
+        "order_status": "payment recieved"
     },
     {
-        "pickup": "2018-02-10T07:30:45Z",
-        "customer_id": 13,
-        "price": 357,
-        "payment": true
+        "date": "2014-09-25",
+        "time": "03:01",
+        "address": "137 Florence Avenue",
+        "city": "Libertytown",
+        "state": "Arizona",
+        "zip": 61740,
+        "price": 264,
+        "payment_status": "error",
+        "order_status": "accepted"
     },
     {
-        "pickup": "2014-12-10T03:03:27Z",
-        "customer_id": 10,
-        "price": 286,
-        "payment": false
+        "date": "2015-03-16",
+        "time": "11:40",
+        "address": "880 Hubbard Street",
+        "city": "Hailesboro",
+        "state": "Tennessee",
+        "zip": 57119,
+        "price": 309,
+        "payment_status": "pending",
+        "order_status": "payment recieved"
     },
     {
-        "pickup": "2017-12-04T08:30:33Z",
-        "customer_id": 20,
-        "price": 391,
-        "payment": false
-    },
-    {
-        "pickup": "2020-05-25T02:47:12Z",
-        "customer_id": 2,
-        "price": 303,
-        "payment": false
-    },
-    {
-        "pickup": "2018-07-24T09:21:49Z",
-        "customer_id": 4,
-        "price": 366,
-        "payment": false
-    },
-    {
-        "pickup": "2019-07-09T03:56:25Z",
-        "customer_id": 3,
-        "price": 294,
-        "payment": true
-    },
-    {
-        "pickup": "2018-11-14T06:21:34Z",
-        "customer_id": 20,
-        "price": 394,
-        "payment": true
-    },
-    {
-        "pickup": "2015-04-17T07:33:26Z",
-        "customer_id": 13,
-        "price": 329,
-        "payment": false
+        "date": "2016-12-03",
+        "time": "03:33",
+        "address": "940 Beverly Road",
+        "city": "Conway",
+        "state": "Kentucky",
+        "zip": 23709,
+        "price": 256,
+        "payment_status": "complete",
+        "order_status": "complete"
     }
 ];
 

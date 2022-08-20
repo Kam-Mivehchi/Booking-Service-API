@@ -10,16 +10,10 @@ Customer.init(
     {
         id: {
             // TODO: make the ID unique id maybe session or device based
-            type: DataTypes.INTEGER,
-            allowNull: false,
+            type: DataTypes.UUID,
+            defaultValue: DataTypes.UUIDV4,
             // TODO: research primary key
             primaryKey: true,
-            autoIncrement: true
-        },
-        email: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            foreignKey: true,
         },
         Lname: {
             type: DataTypes.STRING,
@@ -29,32 +23,25 @@ Customer.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        address: {
+        email: {
             type: DataTypes.STRING,
             allowNull: false,
-        },
-        address2: {
-            type: DataTypes.STRING,
-        },
-        city: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        state: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        zip: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
+            unique: true,
             validate: {
-                len: [5]
-                // TODO: validate that it is in range
+                isEmail: true
             }
         },
+        phone: {
+            type: DataTypes.STRING,
+            unique: true,
+            validate: {
 
-
+            }
+        }
     },
+
+
+
     {
         sequelize,
         timestamps: false,
