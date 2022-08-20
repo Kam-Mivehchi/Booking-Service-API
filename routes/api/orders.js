@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const { Order, Availability } = require('../../models');
+const { Order } = require('../../models');
 
 
 // console.log(range)

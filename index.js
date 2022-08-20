@@ -6,7 +6,7 @@ const routes = require('./routes');
 
 
 var corsOptions = {
-    origin: 'https://localhost:3001'
+    origin: 'https://back-end4.herokuapp.com/'
 }
 
 const app = express();
