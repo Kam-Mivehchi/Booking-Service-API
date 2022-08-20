@@ -60,7 +60,7 @@ Order.init(
         },
         payment_status: {
             type: DataTypes.STRING,
-            defaultValue: "null"
+            defaultValue: "pending"
             ////options ->   pending,  complete,  error
         },
         order_status: {

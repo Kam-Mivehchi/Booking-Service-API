@@ -18,6 +18,10 @@ router.get('/:id', async (req, res) => {
         res.status(500).json(err)
     }
 })
+
+//get user by phone number
+
+
 router.get('/:id/orders', async (req, res) => {
     try {
         const customers = await Order.findAll({
@@ -29,6 +33,15 @@ router.get('/:id/orders', async (req, res) => {
         res.status(200).json(customers)
     } catch (err) {
         res.status(500).json(err)
+    }
+})
+
+router.post('/findUser', async (req, res) => {
+    try {
+        const customer = await Customer.findOne({ where: { phone: req.body.phone } })
+        res.status(200).json(customer)
+    } catch (error) {
+        res.status(500).json(error)
     }
 })
 
