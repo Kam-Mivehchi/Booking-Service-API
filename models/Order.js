@@ -5,7 +5,7 @@ const sequelize = require('../config/config')
 //extending built in sequelize model
 class Order extends Model { }
 
-
+//add weight
 Order.init(
     {
         orderId: {
