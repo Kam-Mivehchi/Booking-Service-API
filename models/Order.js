@@ -59,7 +59,7 @@ Order.init(
             type: DataTypes.INTEGER,
         },
         weight: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
         },
         payment_status: {
             type: DataTypes.STRING,
