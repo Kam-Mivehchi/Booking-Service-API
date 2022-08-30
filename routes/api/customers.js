@@ -39,7 +39,8 @@ router.get('/:id/orders', async (req, res) => {
 router.post('/findUser', async (req, res) => {
     try {
         const customer = await Customer.findOne({ where: { phone: req.body.phone } })
-        res.status(200).json(customer)
+
+        res.status(200).json(customer.id)
     } catch (error) {
         res.status(500).json(error)
     }
