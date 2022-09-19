@@ -11,6 +11,8 @@ Application is deployed through Heroku and is serving as the first iteration of 
 + mySQL
 + Sequelize
 + Node.js
++ Cors
+
 ## Deployment
  https://back-end4.herokuapp.com/api/
  
