@@ -14,7 +14,7 @@ Application is deployed through Heroku and is serving as the first iteration of 
 + CORS
 
 ## Deployment
-incredible-unicorn-59cf53.netlify.app/
+ https://incredible-unicorn-59cf53.netlify.app/
  https://back-end4.herokuapp.com/api/
  
 ## Routes
